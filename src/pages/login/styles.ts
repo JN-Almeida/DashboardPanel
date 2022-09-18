@@ -8,7 +8,7 @@ export const Container = styled.section`
 
 export const ContainerLogin = styled.div`
   background-color: #fff;
-  height: 80vh;
+  height: 60vh;
   width: 80vw;
   max-width: 1388px;
   margin: 0 auto;
