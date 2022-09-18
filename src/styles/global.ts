@@ -5,7 +5,12 @@ export const GlobalStyle = createGlobalStyle`
     --background: #f0f2f5;
 
     --primary-color: #002846;
+    --primary-light: #0076D1;
+    --primary-dark: #001D33;
+
     --secundary-color: #5CC4BD;
+    --secundary-ligth: #86f5ed;
+    --secundary-dark: #205451;
 
     --black-color: #000000;
     --White-color: #ffffff;
@@ -41,5 +46,14 @@ export const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6, strong {
     font-weight: 700;
+    color: var(--primary-color)
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  img {
+    width: 100%;
   }
 `
