@@ -3,7 +3,7 @@ import loginImage from '../../assets/screen-login.svg'
 import { Input } from "../../components/Input";
 import Button from "../../components/Button";
 
-export function Login() {
+export default function Login() {
   return (
     <Container>
       <ContainerLogin>
