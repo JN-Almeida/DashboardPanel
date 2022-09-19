@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { FiLogOut } from 'react-icons/fi';
 import { Container, InfosLeft, LogoutButton, Menu, Wrapper } from "./styles";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export default function Header() {
+  const { user, signOut } = useContext(AuthContext)
+  console.log(user)
+
   return (
     <Container>
       <Wrapper>
@@ -20,8 +25,10 @@ export default function Header() {
         </Menu>
 
         <InfosLeft>
-          Fulano de tal
-          <LogoutButton>
+          <label>
+            {user?.name}
+          </label>
+          <LogoutButton title="Sair" onClick={() => signOut()}>
             <FiLogOut size={17} />
           </LogoutButton>
         </InfosLeft>

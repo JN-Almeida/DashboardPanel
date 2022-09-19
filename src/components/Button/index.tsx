@@ -1,19 +1,20 @@
 import { Empty, OutLined, Solid } from './styles';
 
 type Props = {
-  type: string;
+  buttonType: string;
   IconLeft?: any;
   IconRight?: any;
   margin?: string;
   children: string;
   onClick: any;
+  type: any;
 };
 
-export default function Button({ type, IconLeft, IconRight, ...rest }: Props) {
-  switch (type) {
+export default function Button({ buttonType, IconLeft, IconRight, type, ...rest }: Props) {
+  switch (buttonType) {
     case 'solid':
       return (
-        <Solid {...rest}>
+        <Solid type={type} {...rest}>
           {IconLeft && <IconLeft />}
           {rest.children}
           {IconRight && <IconRight />}

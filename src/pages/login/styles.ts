@@ -29,7 +29,7 @@ export const LoginLeft = styled.div`
   padding: 0 90px 30px 0;
   border-right: solid 1px #cecece;
 `
-export const LoginRight = styled.div`
+export const LoginRight = styled.form`
   padding: 0 30px 0 90px;
   display: flex;
   flex-direction: column;

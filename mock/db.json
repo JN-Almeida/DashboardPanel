@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jonathan Almeida",
+      "email": "teste@teste.com",
+      "password": "teste123"
+    }
+  ],
+
+  "products": []
+}
