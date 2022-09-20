@@ -21,9 +21,7 @@ export function Router() {
       <Route
         path='/login'
         element={
-          <LoginRoute>
             <Login />
-          </LoginRoute>
         }
       />
       <Route

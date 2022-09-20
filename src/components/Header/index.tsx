@@ -6,8 +6,7 @@ import { AuthContext } from "../../contexts/AuthContext";
 
 export default function Header() {
   const { user, signOut } = useContext(AuthContext)
-  console.log(user)
-
+  
   return (
     <Container>
       <Wrapper>

@@ -1,29 +1,32 @@
 import { forwardRef, ForwardRefRenderFunction } from 'react';
-import { FieldError } from 'react-hook-form'
-import { Error, Label, InputDefault, Container } from './styles';
+import {
+  Error,
+  Label,
+  Container,
+  TextareaDefaul,
+} from './styles';
 
 type Props = {
-  mask?: string;
   label?: string;
   name: string;
-  type: string;
   error?: any;
   disabled?: boolean;
   placeholder?: string;
   required?: boolean;
+  rows: string;
 };
 
-const InputBase: ForwardRefRenderFunction<HTMLInputElement, Props> = (
+const TextareaBase: ForwardRefRenderFunction<HTMLInputElement, Props> = (
   { label, name, error, ...rest },
   ref
 ) => {
   return (
     <Container>
       {label && <Label>{label}</Label>}
-      <InputDefault ref={ref} name={name} {...rest}  />
+      <TextareaDefaul ref={ref} name={name} {...rest}></TextareaDefaul>
       {error && <Error>{error}</Error>}
     </Container>
   );
 };
 
-export const Input = forwardRef(InputBase);
+export const Textarea = forwardRef(TextareaBase);

@@ -60,7 +60,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
   function signOut() {
     localStorage.removeItem("User");
-    setUser()
+    setUser(undefined)
     navigate("/login")
   }
 

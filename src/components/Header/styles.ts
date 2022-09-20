@@ -4,6 +4,7 @@ export const Container = styled.header`
   background-color: var(--secundary-color);
   height: 50px;
   width: 100vw;
+  margin-bottom: 30px;
 `
 
 export const Wrapper = styled.div`

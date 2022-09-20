@@ -6,8 +6,9 @@ type Props = {
   IconRight?: any;
   margin?: string;
   children: string;
-  onClick: any;
+  onClick?: any;
   type: any;
+  disabled?: boolean;
 };
 
 export default function Button({ buttonType, IconLeft, IconRight, type, ...rest }: Props) {

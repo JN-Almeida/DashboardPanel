@@ -21,6 +21,11 @@ export const ContainerLogin = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 30px;
+
+  @media (max-width: 618px) {
+    display: block;
+    height: 420px;
+  }
 `
 
 export const LoginLeft = styled.div`
@@ -28,6 +33,10 @@ export const LoginLeft = styled.div`
   justify-content: center;
   padding: 0 90px 30px 0;
   border-right: solid 1px #cecece;
+
+  @media (max-width: 618px) {
+    display: none;
+  }
 `
 export const LoginRight = styled.form`
   padding: 0 30px 0 90px;
@@ -35,6 +44,10 @@ export const LoginRight = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 618px) {
+    padding: 0;
+  }
 
   h1 {
     margin-bottom: 20px;

@@ -7,6 +7,62 @@
       "password": "teste123"
     }
   ],
-
-  "products": []
+  "productsList": [
+    {
+      "id": 1,
+      "name": "Plastytion 4",
+      "price": 3000,
+      "group": "Games",
+      "description": "Video game top"
+    },
+    {
+      "name": "teste",
+      "price": 40,
+      "group": "games",
+      "description": "rt",
+      "id": 2
+    },
+    {
+      "name": "ret",
+      "price": null,
+      "group": "ert",
+      "description": "ert",
+      "id": 3
+    },
+    {
+      "name": "novo",
+      "price": 10,
+      "group": "teste",
+      "description": "ffffffffffffaaaaaaaaaaa",
+      "id": 4
+    },
+    {
+      "name": "novo",
+      "price": 10,
+      "group": "teste",
+      "description": "ffffffffffffaaaaaaaaaaa",
+      "id": 5
+    },
+    {
+      "name": "novo",
+      "price": 10,
+      "group": "teste",
+      "description": "ffffffffffffaaaaaaaaaaa",
+      "id": 6
+    },
+    {
+      "name": "produto",
+      "price": 80,
+      "group": "algum",
+      "description": "nana",
+      "id": 7
+    },
+    {
+      "name": "novo2",
+      "price": 20,
+      "group": "games",
+      "description": "",
+      "id": 8
+    }
+  ]
 }
